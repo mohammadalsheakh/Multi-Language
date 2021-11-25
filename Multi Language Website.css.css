@@ -1,0 +1,188 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+#navbar{
+    width: 100%;
+    height: 100px;
+    background: rgba(245, 222, 179, 0.527);
+}
+#mohammad{
+    height: 100%;
+    float: left;
+    width: 260px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#buttons{
+    float: right;
+}
+.aa{
+    line-height: 100px;
+    text-decoration: none;
+}
+#mohammadimage{
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+
+#mohammadname{
+    line-height: 100px;
+    float: right;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#buttons{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbuttons{
+    margin: 10px;
+    height: 50px;
+    width: 70px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+#arabic{
+    color: red;
+    border: red solid 2px;
+    font-size: 15px;
+}
+#arabic:hover{
+    background-color: red;
+    border: red groove 2px;
+    color: white;
+}
+#english{
+    color: green;
+    border: green solid 2px;
+}
+#english:hover{
+    background-color: green;
+    border: green groove 2px;
+    color: white;
+}
+#welcome{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(45deg, orange 50%, rgba(77, 62, 62, 0.616) 50%);
+}
+#welcomer{
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 22px;
+    padding-left: 20px;
+    color: rgba(20, 5, 5, 0.842);
+}
+#imageslider{
+    overflow: hidden;
+}
+#imageslider figure{
+    margin: 0px;
+    margin-top: 20px;
+    position: relative;
+    width: 500%;
+    height: 500px;
+    animation: slider 20s infinite;
+}
+.images{
+    width: 20%;
+    height: 500px;
+    float: left;
+    cursor: pointer;
+    
+}
+@keyframes slider{
+    0%{
+        left:0%;
+    }
+    20%{
+        left:0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+#aboutdiv{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: rgba(197, 189, 189, 0.397);
+    border-bottom: solid 1px rgba(165, 161, 161, 0.726);
+}
+#aboutus{
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contactdiv{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: center;
+    border-bottom: solid black 1px;
+}
+#contactspan{
+    font-size: 18px;
+    font-weight: bold;
+}
+#contactbutton{
+    width: 25%;
+    max-width: 100px;
+    height: 50px;
+    color: white;
+    background-color: rgb(70, 116, 70);
+    cursor: pointer;
+}
+@media only screen and (max-width:500px){
+    #navbar{
+        height: 200px;
+    }
+    #mohammad{
+    height: 90px;
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mohammadimage{
+    padding: 10px;
+}
+#buttons{
+    float: none;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
